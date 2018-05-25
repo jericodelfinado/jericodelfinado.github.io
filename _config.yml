@@ -10,3 +10,5 @@ github_username: "jericodelfinado"
 
 # Build settings
 markdown: kramdown
+
+permalink: /blog/:slug
