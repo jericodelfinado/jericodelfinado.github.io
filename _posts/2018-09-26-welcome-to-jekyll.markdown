@@ -3,6 +3,7 @@ layout: post
 title:  "Okay, so i'm doing this"
 date:   2018-09-26 11:48:11 +0800
 categories: jekyll update
+excerpt: I'm bored. I don't know what to do. So I decided to fire up Jekyll and start writing.
 ---
 I'm bored. I don't know what to do. So I decided to fire up Jekyll and start writing.
 
