@@ -8,12 +8,12 @@ span.strikethrough {
   border-bottom: none;
 }
 
-.row:before,.row:after {
+.row:before, .row:after {
   display: table;
   content: " ";
 }
 
-.row:after{
+.row:after {
   clear: both;
 }
 
@@ -39,6 +39,21 @@ span.strikethrough {
     text-transform: uppercase;
     line-height: normal;
   }
+  @media screen and (max-width: 600px) {
+    .site-nav {
+      border:none;
+      height: 50px;
+      left: 16px;
+      .page-link {
+        display: inline-block;
+        margin-left: 0;
+        margin-right: 16px;
+      }
+      .nav-table {
+        margin: 12px 0;
+      }
+    }
+  }
 
   .nav-table {
     margin: 30px 0 12px 0;
@@ -50,8 +65,8 @@ span.strikethrough {
       padding: 6px 6px 6px 0;
       border-bottom: 2px $background-color solid;
       margin-right: 24px;
-      text-align: center;
-      text-color: $grey-color-dark;
+      text-align: left;
+      color: $grey-color-dark;
       &:hover {
         border-color: $grey-color-dark;
         text-decoration: none;
