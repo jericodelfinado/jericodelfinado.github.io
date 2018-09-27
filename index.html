@@ -4,3 +4,38 @@
 
 layout: home
 ---
+
+<section class="intro">
+    <h2>Bacon ipsum</h2>
+    <p>
+        Bacon ipsum dolor amet dolore meatloaf ham hock in enim ad. Shankle kevin dolore filet mignon turkey sirloin short loin irure boudin nulla chicken bacon pancetta. Spare ribs velit anim et sirloin drumstick bacon aliquip turducken flank consequat nisi.
+    </p>
+</section>
+
+<section class="skills row">
+    <aside class="skillset">
+        <h3>Skillset</h3>
+        <div class="skill-list">
+            {% for skill in site.data.skills %}
+            <h5 class="skill-category">{{ skill.category }}</h5>
+            <ul>
+                {% for item in skill.items %}
+                <li class="skill-item">{{item}}</li>
+                {% endfor%}
+            </ul>
+            {% endfor %}
+        </div>
+    </aside>
+    <div class="experience">
+        <h3>Experience</h3>
+        <div class="xp-container">
+            {% for item in site.data.experience %}
+            <div class="xp-item">
+                <h4 class="xp-company">{{ item.company }}</h4>
+                <h5 class="xp-position">{{ item.position }} | <small>{{ item.from_date}} - {{ item.to_date }}</small></h5>
+                <div class="xp-description">{{ item.description }}</div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
