@@ -39,7 +39,7 @@ span.strikethrough {
     text-transform: uppercase;
     line-height: normal;
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 720px) {
     .site-nav {
       border:none;
       height: 50px;
@@ -87,7 +87,7 @@ section.skills {
   .skillset {
     width: 30%;
     float: left;
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 720px) {
       float: none;
       width: 100%;
     }
