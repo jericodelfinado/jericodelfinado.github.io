@@ -87,6 +87,11 @@ section.skills {
   .skillset {
     width: 30%;
     float: left;
+    @media screen and (max-width: 600px) {
+      float: none;
+      width: 100%;
+    }
+    margin-right: 16px;
     h5 {
       margin: 0
     }
@@ -101,7 +106,6 @@ section.skills {
 
   .experience {
     .xp-container {
-      position: relative;
       display: table;
       padding-left: 24px;
       border-left: 2px $grey-color-dark dashed;
