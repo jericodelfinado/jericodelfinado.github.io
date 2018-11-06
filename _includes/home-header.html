@@ -9,17 +9,6 @@
       <h5>SOFTWARE ENGINEER. <span class="strikethrough">TRAVELLER</span>. COMMUTER.</h5>
     </div>
 
-    {%- if page_paths -%}
-      <nav class="site-nav">
-        <div class="nav-table">
-          {%- for path in page_paths -%}
-          {%- assign my_page = site.pages | where: "path", path | first -%}
-          {%- if my_page.title -%}
-            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-          {%- endif -%}
-          {%- endfor -%}
-        </div>
-      </nav>
-    {%- endif -%}
+    {%- include nav.html -%}
   </div>
 </header>
