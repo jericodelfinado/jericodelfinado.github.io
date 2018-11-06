@@ -14,10 +14,10 @@
     - Grails (Spring + Hibernate)
     - SOFA Spring
     - Mule ESB
-    - Django
     - Angular JS
     - React JS
     - Jekyll
+    - Django
 - category: Design and Analysis
   items:
     - RESTful API design
