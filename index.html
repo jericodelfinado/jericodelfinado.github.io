@@ -1,42 +1,55 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+layout: page
 ---
 
-<section class="intro">
-    <p>
-        <strong>Design. Development. Delivery.</strong> 
-    </p>
-    <p>
-        I'm a software engineer with a creative background that makes for one that offers bold solutions to various challenges within given constraints. Learns fast and learns deep &mdash; highly analytical.
-    </p>
-</section>
-<section class="skills row">
-    <aside class="skillset">
-        <h3>Skillset</h3>
-        <div class="skill-list">
-            {% for skill in site.data.skills %}
-            <h5 class="skill-category">{{ skill.category }}</h5>
-            <ul>
-                {% for item in skill.items %}
-                <li class="skill-item">{{item}}</li>
-                {% endfor%}
+<div class="main-profile">
+    <h4>Profile</h4>
+    <p>A <strong>creative software engineer</strong> with over five years of experience building high-quality industry-standard clean code. A <strong>proficient solutions analyst</strong> with extensive industry exposure to FinTech (including Ant Financial), balancing business value, and technically sound design principles. An <strong>efficient in-depth learner</strong> with a knack for acquiring new skills and domain expertise to aid well-informed decision-making.</p>
+    <h4>Skills</h4>
+    <ul class="skills">
+        <li>Object-Oriented Design</li>
+        <li>Microservices Architecture</li>
+        <li>Domain-Driven Design</li>
+        <li>Test-Driven Development</li>
+        <li>Java and Groovy</li>
+        <li>Spring, Spring Boot, SOFA</li>
+        <li>SQL, NoSQL</li>
+        <li>Hibernate, myBatis</li>
+    </ul>
+    <h4>Experience</h4>
+    <ul class="experience">
+        <li>
+            <h5 class="company">IBM<small>Apr 2020 - Present</small></h5>
+            <h6>Lead Application Developer</h6>
+            <p>Responsible for the design and development of high-performance microservices for the hybrid cloud migration project of one of the largest traditional banks in the Philippines, doing requirements analyses,  code reviews, application architecture redesigns, and ensuring industry best practices are in place.</p>
+        </li>
+        <li>
+            <h5 class="company">Mynt<small>Jul 2017 - Apr 2020</small></h5>
+            <h6>Domain Lead Engineer</h6>
+            <ul class="responsibilities">
+                <li>Led and mentored a lean team of engineers that design, develop, and maintain the systems that drive GCash payment products.</li>
+                <li>Provided integration and systems analyses for solutions to cross-domain projects within GCash.</li>
+                <li>As a domain expert, I provided key consultations and coaching on solutions design, process improvements, emergency handling, system maintenance, strategy, and innovation across engineering teams.</li>
+                <li>Served as a key engineer on multiple development efforts of GCash payment services, providing insight on development standards and critical consultations on possible solutions.</li>
             </ul>
-            {% endfor %}
-        </div>
-    </aside>
-    <div class="experience">
-        <h3>Experience</h3>
-        <div class="xp-container">
-            {% for item in site.data.experience %}
-            <div class="xp-item">
-                <h4 class="xp-company">{{ item.company }}</h4>
-                <h5 class="xp-position">{{ item.position }} | <small>{{ item.from_date}} - {{ item.to_date }}</small></h5>
-                <div class="xp-description">{{ item.description }}</div>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</section>
+        </li>
+        <li>
+            <h5 class="company">Aestrea Software Development<small>Jun 2015 - Jun 2017</small></h5>
+            <h6>Junior Software Engineer</h6>
+            <p>Led off-cycle marketing growth by developing in-house reusable and high performing promotional tools while integrating with industry-leading mail-sending and marketing services where economical.</p>
+        </li>
+    </ul>
+    <h4>Education and Training</h4>
+    <ul class="education clearfix">
+        <li>
+            <h6>Expert 2 (Acquiring Domain)</h6>
+            <p>Ant Financial Services Group</p>
+            <small>2019; Hangzhou, CN</small>
+        </li>
+        <li>
+            <h6>BS Information Technology</h6>
+            <p>Mindanao State University</p>
+            <small>2015; Cum Laude</small>
+        </li>
+    </ul>
+</div>

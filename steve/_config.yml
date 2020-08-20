@@ -1,23 +1,23 @@
 # General Settings
-name: Jerico Caesar Delfinado
-job_title: (Creative) Software Engineer
-email: jerico.delfinado@gmail.com
-description: <strong>I love solving problems.</strong> I like analyzing and coming up with solutions to grow and build products. I also have photography and graphic design as hobbies. Follow me on instagram or send me an email so we can build something awesome. 
-#avatar: https://s3.amazonaws.com/uifaces/faces/twitter/dancounsell/128.jpg
+name: Steve Austin
+job_title: UI/UX Engineer
+email: youremail@gmail.com
+description: I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line.
+avatar: https://s3.amazonaws.com/uifaces/faces/twitter/dancounsell/128.jpg
 favicon: /favicon.ico
-twitter_handler: jericodelfinado
-#analytics_code: UA-XXXXXXX-2
-#disqus: your_disqus_site
+twitter_handler: your_handler
+analytics_code: UA-XXXXXXX-2
+disqus: your_disqus_site
 
 # Social Accounts
 social_networks:
-# -  { name: facebook, url: 'https://facebook.com' }
-# -  { name: twitter, url: 'https://twitter.com/jericodelfinado' }
--  { name: instagram, url: 'https://instagram.com/jericodelfinado' }
+-  { name: facebook, url: 'http://facebook.com' }
+-  { name: twitter, url: 'http://twitter.com' }
+-  { name: instagram, url: '' }
 -  { name: google-plus, url: '' }
--  { name: linkedin, url: 'https://www.linkedin.com/in/jericodelfinado/' }
+-  { name: linkedin, url: '' }
 -  { name: skype, url: '' }
--  { name: github, url: 'https://github.com/jericodelfinado' }
+-  { name: github, url: '' }
 -  { name: codepen, url: '' }
 -  { name: stack-overflow, url: '' }
 -  { name: dribbble, url: '' }
@@ -38,12 +38,12 @@ social_networks:
 -  { name: applemusic, url: '' }
 
 # Modules Settings
-show_categories: 0
-show_tags: 0
+show_categories: 1
+show_tags: 1
 show_email: 1
-show_rss: 0
-show_comments: 0
-show_menu: 0
+show_rss: 1
+show_comments: 1
+show_menu: 1
 fixed_sidebar: 1
 
 # Defaults
@@ -68,7 +68,7 @@ category_dir: categories
 
 # Pagination
 paginate: 10
-paginate_path: "/page:num/" 
+paginate_path: "/page:num/"
 
 # Conversion
 markdown: kramdown
