@@ -17,7 +17,9 @@
     {% if site.show_menu == 1 %}
         {% if site.pages %}
         <div class="mainmenu">
-            <a href="{{ site.baseurl | prepend: site.url }}" {% if page.url == "/" %}class="active"{% endif %}>Home</a>
+            <a href="{{ site.baseurl | prepend: site.url }}" {% if page.url == "/" %}class="active"{% endif %}>Profile</a>
+            <a href="{{ site.blogurl | prepend: site.url }}" {% if page.url == "/blog/" %}class="active"{% endif %}>Blog</a>
+            
             {% for p in site.pages %}
                 {% if p.layout == 'page' %}
                     <a href="{{ p.url | prepend: site.baseurl | prepend: site.url }}" {% if p.url == page.url %}class="active"{% endif %}>{{ p.title }}</a>
@@ -27,7 +29,7 @@
         {% endif %}
     {% endif %}
 
-    <p class="about-me">{{ site.description }}</p>
+    <p class="about-me"><strong>I love solving problems.</strong> I like analyzing and coming up with solutions to grow and build products. I also have photography and graphic design as hobbies. Follow me on instagram or send me an email if you would like to start creating and building awesome stuff.</p>
 
     <ul class="socials">
         {% for social in site.social_networks %}{% if social.url != '' %}<li><a href="{{social.url}}"><svg title="{{social.name}}" width="16" height="16" {% if social.name == 'applemusic' %} style="margin: 0 0 0 -2px" {% endif %}><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl | prepend: site.url }}/assets/svg/social-icons.svg#{{social.name}}-icon"></use></svg></a></li>{% endif %}{% endfor %}

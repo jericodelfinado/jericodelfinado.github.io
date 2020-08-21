@@ -2,7 +2,7 @@
 name: Jerico Caesar Delfinado
 job_title: (Creative) Software Engineer
 email: jerico.delfinado@gmail.com
-description: <strong>I love solving problems.</strong> I like analyzing and coming up with solutions to grow and build products. I also have photography and graphic design as hobbies. Follow me on instagram or send me an email if you would like to start creating and building awesome stuff. 
+description: I love solving problems. I like analyzing and coming up with solutions to grow and build products. I also have photography and graphic design as hobbies. Follow me on instagram or send me an email if you would like to start creating and building awesome stuff. 
 avatar: https://www.gravatar.com/avatar/458e1e8282bcf9c02d53a926c30662b0?s=140
 favicon: /favicon.ico
 twitter_handler: jericodelfinado
@@ -38,12 +38,12 @@ social_networks:
 -  { name: applemusic, url: '' }
 
 # Modules Settings
-show_categories: 0
+show_categories: 1
 show_tags: 0
 show_email: 1
 show_rss: 0
 show_comments: 0
-show_menu: 0
+show_menu: 1
 fixed_sidebar: 1
 
 # Defaults
@@ -58,17 +58,18 @@ defaults:
 # Serving
 url: ""
 baseurl: ""
+blogurl: "/blog"
 
 # Includes
 include: ["_pages"]
 
 # Outputting
-permalink: /:categories/:title.html
+permalink: /blog/:categories/:title.html
 category_dir: categories
 
 # Pagination
 paginate: 10
-paginate_path: "/page:num/" 
+paginate_path: "/blog/page:num/" 
 
 # Conversion
 markdown: kramdown
