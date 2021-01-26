@@ -1,55 +1,83 @@
 ---
-layout: page
+title: Home
+layout: default
+description: Web profile for Jerico Delfinado
+featured_image: /assets/img/social.jpg
 ---
 
-<div class="main-profile">
-    <h4>Profile</h4>
-    <p>A <strong>creative software engineer</strong> with over five years of experience building high-quality industry-standard clean code. A <strong>proficient solutions analyst</strong> with extensive industry exposure to FinTech (including Ant Financial), balancing business value, and technically sound design principles. An <strong>efficient in-depth learner</strong> with a knack for acquiring new skills and domain expertise to aid well-informed decision-making.</p>
-    <h4>Skills</h4>
-    <ul class="skills">
-        <li>Object-Oriented Design</li>
-        <li>Microservices Architecture</li>
-        <li>Domain-Driven Design</li>
-        <li>Test-Driven Development</li>
-        <li>Java and Groovy</li>
-        <li>Spring, Spring Boot, SOFA</li>
-        <li>SQL, NoSQL</li>
-        <li>Hibernate, myBatis</li>
-    </ul>
-    <h4>Experience</h4>
-    <ul class="experience">
-        <li>
-            <h5 class="company">IBM<small>Apr 2020 - Present</small></h5>
-            <h6>Lead Application Developer</h6>
-            <p>Responsible for the design and development of high-performance microservices for the hybrid cloud migration project of one of the largest traditional banks in the Philippines, doing requirements analyses,  code reviews, application architecture redesigns, and ensuring industry best practices are in place.</p>
-        </li>
-        <li>
-            <h5 class="company">Mynt<small>Jul 2017 - Apr 2020</small></h5>
-            <h6>Domain Lead Engineer</h6>
-            <ul class="responsibilities">
-                <li>Led and mentored a lean team of engineers that design, develop, and maintain the systems that drive GCash payment products.</li>
-                <li>Provided integration and systems analyses for solutions to cross-domain projects within GCash.</li>
-                <li>As a domain expert, I provided key consultations and coaching on solutions design, process improvements, emergency handling, system maintenance, strategy, and innovation across engineering teams.</li>
-                <li>Served as a key engineer on multiple development efforts of GCash payment services, providing insight on development standards and critical consultations on possible solutions.</li>
-            </ul>
-        </li>
-        <li>
-            <h5 class="company">Aestrea Software Development<small>Jun 2015 - Jun 2017</small></h5>
-            <h6>Junior Software Engineer</h6>
-            <p>Led off-cycle marketing growth by developing in-house reusable and high performing promotional tools while integrating with industry-leading mail-sending and marketing services where economical.</p>
-        </li>
-    </ul>
-    <h4>Education and Training</h4>
-    <ul class="education clearfix">
-        <li>
-            <h6>Expert 2 (Acquiring Domain)</h6>
-            <p>Ant Financial Services Group</p>
-            <small>2019; Hangzhou, CN</small>
-        </li>
-        <li>
-            <h6>BS Information Technology</h6>
-            <p>Mindanao State University</p>
-            <small>2015; Cum Laude</small>
-        </li>
-    </ul>
-</div>
+<!--Replace this page with your landing page content -->
+{% if site.data.settings.home_settings.theme == "landing" %}
+  {% include home-sample.html %}
+  <div class="features-7 fullWidth contentWrapper">
+    <div class="container mb-2">
+    <div class="row">
+        <div class="col-md-8 text-center mx-auto">
+            <h3 class="display-3">BLOG</h3>
+            <p class="lead pb-5">Sometimes, I also write <span style="text-decoration: line-through;">in a futile attempt</span> to organize my thoughts.</p>
+        </div>
+    </div>
+    
+    </div>
+  </div>
+  {% include blogsHome.html %}
+{% endif %}
+
+{% if site.data.settings.home_settings.theme == "blog" %}
+  <!-- Or turn your homepage into just a blog -->
+  {% if site.data.settings.blog_settings.theme == "narrow" %}
+  <div class="page-header page-header-small bg-secondary fullWidth ">
+      <div class="container contentWrapper">
+        <div class="row">
+          <div class="col-lg-10 mx-auto text-center pt-4">
+            <h2 class="display-3">BLOG</h2>
+            <h2 class="lead pl-5 pr-5 pb-3 text-center">Sometimes, I also write <span style="text-decoration: line-through;">in a futile attempt</span> to organize my thoughts.</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <section class="blog main-raised">
+          {% include blogsHome.html %}  
+      </section>
+          
+  {% endif %}
+
+  {% if site.data.settings.blog_settings.theme == "basic" %}
+  <div class="page-header page-header-small bg-secondary fullWidth ">
+      <div class="container contentWrapper">
+        <div class="row">
+          <div class="col-lg-10 mx-auto text-center pt-4">
+            <h2 class="display-3">BLOG</h2>
+            <h2 class="lead pl-5 pr-5 pb-3 text-center">Sometimes, I also write <span style="text-decoration: line-through;">in a futile attempt</span> to organize my thoughts.</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <section class="blog mt-5">
+          {% include blogsHome.html %}  
+      </section>
+          
+  {% endif %}
+
+  {% if site.data.settings.blog_settings.theme == "grid" %}
+  <div class="page-header page-header-small bg-secondary fullWidth ">
+      <div class="container contentWrapper">
+        <div class="row">
+          <div class="col-lg-10 mx-auto text-center pt-4">
+            <h2 class="display-3">BLOG</h2>
+            <h2 class="lead pl-5 pr-5 pb-3 text-center">Sometimes, I also write <span style="text-decoration: line-through;">in a futile attempt</span> to organize my thoughts.</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <section class="blog">
+          {% include blogsHome.html %}  
+      </section>
+          
+  {% endif %}
+
+{% endif %}
+
+

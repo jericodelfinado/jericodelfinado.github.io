@@ -1,0 +1,13 @@
+
+$primary:       #3a3a3a !default;
+$secondary:     #eee !default;
+
+.inverse {
+    background-color: #3a3a3a;
+    color: #eee;
+    h1,h2,h3,h4,h5,h6 { color: #eee;}
+}
+
+.nav-link-inner--text {
+    letter-spacing: 4px;
+}
