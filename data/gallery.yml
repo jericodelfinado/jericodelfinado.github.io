@@ -1,0 +1,27 @@
+title: "Photo Blog"
+style: "style2 medium onscroll-fade-in"
+id: "photo-blog"
+link: "/"
+label: "See more"
+pictures:
+  - title: "Title"
+    content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
+    image: "images/gallery/fulls/01.jpg"
+    thumb: "images/gallery/thumbs/01.jpg"
+
+  - title: "Title"
+    content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
+    image: "images/gallery/fulls/02.jpg"
+    thumb: "images/gallery/thumbs/02.jpg"
+
+  - title: "Title"
+    content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
+    image: "images/gallery/fulls/03.jpg"
+    thumb: "images/gallery/thumbs/03.jpg"
+
+  - title: "Title"
+    content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
+    image: "images/gallery/fulls/04.jpg"
+    thumb: "images/gallery/thumbs/04.jpg"
+
+    

@@ -1,0 +1,31 @@
+## -----------------------------------------------
+## Basic Configuration
+## -----------------------------------------------
+
+title = "This Week in Photos"
+theme = "hugo-story"
+
+
+## -----------------------------------------------
+## Hugo Built-in Features
+## -----------------------------------------------
+
+disableKinds = ["taxonomy", "taxonomyTerm"]
+# googleAnalytics = "your-google-analytics-id"
+
+
+## -----------------------------------------------
+## Site Parameters
+## -----------------------------------------------
+
+[Params]
+  description = "A software engineer who takes photos and designs stuff sometimes."
+  logo = "images/banner.jpg"
+  favicon = true
+
+[Params.social]
+  github = "https://github.com/jericodelfinado/"
+  twitter = "https://twitter.com/heyheyheyjerico"
+  email = "jerico.delfinado@gmail.com"
+  instagram = "https://instagram.com/heyheyheyareyouok"
+  linkedin = "https://linkedin.com/in/jericodelfinado"

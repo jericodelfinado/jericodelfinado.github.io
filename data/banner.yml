@@ -1,0 +1,11 @@
+####################### Banner #########################
+style: "style5 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right invert"
+title : "This Week in Photos"
+subtitle: |
+  A weekly photo blog.
+content : |
+  Photos and word vomits by Jerico
+button:
+  label : "GO TO BLOG"
+  link : "#photo-blog"
+image : "images/banner.jpg"

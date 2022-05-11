@@ -1,0 +1,14 @@
+<!-- Gallery -->
+<section class="wrapper style1 align-center">
+    <!-- Gallery -->
+    <div class="inner">
+        <a href="{{ .link }}" class="button medium smooth-scroll">{{ .label }}</a>
+    </div>
+    <div class="gallery {{ .style }}" id="{{ .id }}">
+        {{ range .pictures }}
+            {{ partial "picture" . }}
+        {{ end }}
+    </div>
+
+
+</section>
